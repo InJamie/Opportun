@@ -1,5 +1,5 @@
 <template>
-  <el-form ref="form" :model="form" label-width="80px">
+  <el-form ref="form" :model="form" label-width="80px" id="loginform">
     <el-form-item label="活动名称">
       <el-input v-model="form.name"></el-input>
     </el-form-item>
@@ -70,8 +70,9 @@ export default {
 }
 </script>
 
-<style scoped>
-el-form {
+<style>
+#loginform {
+  margin:50px auto;
   width: 500px;
   height: 600px;
 }
